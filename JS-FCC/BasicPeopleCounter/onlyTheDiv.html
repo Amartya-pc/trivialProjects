@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <!-- googleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- googleFonts -->
+    <title>PeopleCounter</title>
+</head>
+
+<body>
+    <!-- this works but it has a bug which is lets say you have too many entries the box will keep on expanding and will look ugly. It can be solved with flex-wrap -->
+    <div class="gParentContainer">
+        <div class="parentContainer">
+            <p class="mainHeading commonTheme margin0  commonPadding">
+                People Entered:
+            </p>
+            <p id="count" class="commonTheme mainHeading margin0 commonPadding">
+                2
+            </p>
+            <div class="buttons commonPadding">
+                <button onclick="clicked()" class="commonButtonTheme" style="background-color: #FF6D60;">
+                    INCREMENT
+                </button>
+                <button onclick="save()" class="commonButtonTheme" style="background-color: #8cd770;">
+                    SAVE
+                </button>
+            </div>
+            <p class="commonPadding margin0">
+                Previous Enteries: <span id="pE">
+                    5-7-12-
+                </span>
+            </p>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+
+</html>
