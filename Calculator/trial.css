@@ -1,0 +1,25 @@
+.parentContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: rgb(113, 217, 255);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+
+}div.item{
+    /* border: 2px solid black;
+    text-align: center;
+    padding: 10px; */
+    /* background-color: yellowgreen; */
+}
+button{
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 4px;
+}
