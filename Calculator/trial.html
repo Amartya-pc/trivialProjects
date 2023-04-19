@@ -18,11 +18,10 @@
 
 <body>
     <div class="parentContainer">
-        <div class="container">
-            <div id="dArea" class="displayArea" style="width:auto; height: auto; background-color: white;">
+        <div id="dArea" class="displayArea">
                 Arpit Bala
             </div>
-            <!-- why this div inside the button tag -->
+        <div class="container">    
             <button class="commonThemeBtn" onclick="displayOut(1)">
                 <div class="item">1</div>
             </button>
@@ -49,6 +48,15 @@
             </button>
             <button class="commonThemeBtn" onclick="displayOut(9)">
                 <div class="item">9</div>
+            </button>
+            <button class="commonThemeBtn" onclick="operatorCond('+')">
+                <div class="item">+</div>
+            </button>
+            <button class="commonThemeBtn" onclick="operatorCond('-')">
+                <div class="item">-</div>
+            </button>
+            <button class="commonThemeBtn" onclick="delAll()">
+                <div class="item">Del</div>
             </button>
         </div>
     </div>

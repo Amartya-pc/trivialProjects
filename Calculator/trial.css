@@ -10,13 +10,19 @@ body{
     flex-direction: column;
     background-color: rgb(237, 231, 231);
 }
+.displayArea{
+    background-color: rgb(255, 255, 255);   
+    width: 30%; 
+    height: auto;
+    text-align: center;
+}
 .container{
     background-color: rgb(113, 217, 255);
     display: grid;
     column-gap: 20px;
     row-gap: 20px;
     grid-template-columns:repeat(3,auto) ;
-    grid-template-rows: 100px repeat(3,auto);
+    grid-template-rows:repeat(3,auto);
     /* grid-template-columns: 1fr repeat(3,auto);
     grid-template-rows: 1fr repeat(3,auto); */
     padding: 20px;
@@ -34,3 +40,6 @@ button{
     padding: 10px;
     border-radius: 8px;
 }
+
+/* problems we are having rn we have to look into the proper arrangement of the calc. then we have to make those buttons look like what we have in our mind */
+/* look for the overflow property */
