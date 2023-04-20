@@ -27,6 +27,26 @@ function delAll(){
     // why this aint working mate find out why and this is just work around rn this is another problem that we have to deal with
     globalLyScopedStringDA = ""
 }
+function calc(){
+    let operandOne;
+    let operandTwo;
+    for (i in globalLyScopedStringDA) {
+        console.log(i +" "+globalLyScopedStringDA[i])
+        if(globalLyScopedStringDA[i]=="+"){
+            operandOne = Number(globalLyScopedStringDA.slice(0,i))
+            operandTwo = Number(globalLyScopedStringDA.slice(i,))
+            // console.log(i +""+globalLyScopedStringDA[i])
+            addEM(operandOne,operandTwo)
+            break;
+        }
+    }
+    console.log(operandOne)
+    console.log(operandTwo)
+}
+function addEM(x,y){
+    globalLyScopedStringDA = ""
+    displayOut(x+y)
+}
 
 // the solution from here is easy what you do is concatinate the string and just that when the user presses the = button send this string to a function that traverses the string and from there use specific functions to give back the output
 
@@ -40,3 +60,4 @@ function delAll(){
         // probable solution: create a filter function that checks each entry
     }
 // 2. We have to solve the problem that the first input shouldnt be an operator
+// 3. The fact that adder is the first fucntion that displayOut calls its not efficient we are going to develop this calc again with much more effective code
