@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- googleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- googleFont -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .parentContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgb(231, 238, 244);
+            padding: 10px;
+            width: auto;
+            height: auto;
+        }
+
+        button {
+            background-color: rgb(231, 244, 146);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 5px;
+        }
+
+        button.red {
+            background-color: rgb(243, 105, 105);
+        }
+
+        .btnHolder {
+            display: inline;
+        }
+
+        .dArea {
+            background-color: rgb(255, 255, 255);
+            /* width: 30%; */
+            height: auto;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        video {
+            /* width: auto; */
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 20px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        var x = document.getElementById("vid")
+        function gaddar() {
+            const video = document.getElementById('myVideo');
+            video.src = 'gaddar.mp4';
+        }
+        function wafadar(){
+            const video = document.getElementById('myVideo');
+            video.src = 'wafadar.mp4';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="parentContainer">
+
+        <div class="container">
+            <div class="" id="dArea">
+                <video id="myVideo" width="320" height="240" autoplay>
+                    <source src="old-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+            <div class="btnHolder">
+                <span>
+                    Are you a Gaddar?
+                </span>
+                <button class="commonBtnTheme" onclick="wafadar()">
+                    No
+                </button>
+            </div>
+            <div class="btnHolder">
+                <button class="commonBtnTheme red" onclick="gaddar()">
+                    Yes
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
